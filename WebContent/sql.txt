@@ -1,0 +1,19 @@
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`uploadweb` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+USE `uploadweb`;
+
+/*Table structure for table `uploadfiles` */
+
+DROP TABLE IF EXISTS `uploadfiles`;
+
+CREATE TABLE `uploadfiles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `old_file_name` varchar(100) NOT NULL,
+  `file_type` varchar(100) NOT NULL,
+  `file_size` varchar(100) NOT NULL,
+  `save_path` varchar(200) NOT NULL,
+  `save_time` timestamp NOT NULL,
+  `desc` varchar(200) DEFAULT NULL,
+  `save_name` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8;
